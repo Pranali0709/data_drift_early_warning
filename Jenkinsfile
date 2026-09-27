@@ -1,15 +1,7 @@
 pipeline {
     agent any
 
-    stages {
-
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/Pranali0709/data_drift_early_warning.git'
-            }
-        }
-
+    
         stage('Install Dependencies') {
             steps {
                 bat 'python -m pip install -r requirements.txt'
