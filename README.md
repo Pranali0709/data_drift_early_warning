@@ -66,3 +66,5 @@ data_drift_early_warning/
 ├── README.md
 ├── training_data.csv
 └── new_data.csv
+
+DevOps CI/CD pipeline configured using Jenkins and Kubernetes.

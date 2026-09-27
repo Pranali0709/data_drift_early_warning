@@ -7,6 +7,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
+COPY training_data.csv .
+COPY new_data.csv .
 
 EXPOSE 8501
 
